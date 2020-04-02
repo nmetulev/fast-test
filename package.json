@@ -1,0 +1,21 @@
+{
+  "name": "fastelementplayground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:esm": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "es-dev-server --port 3000 --node-resolve --open --watch --compatibility none --app-index index.html",
+    "start": "run-p build:watch serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@microsoft/fast-element": "file:../../fast-dna/packages/fast-element/microsoft-fast-element-0.4.0.tgz",
+    "@microsoft/mgt": "^1.1.1",
+    "es-dev-server": "^1.45.1",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^3.8.3"
+  }
+}
